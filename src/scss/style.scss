@@ -4,11 +4,38 @@ body {
   background: $off-white;
 }
 
-#main-header {
-  // background-color: $light-blue;
+.avatar {
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
 
-  h4 {
-    color: $off-white;
+.navbar-nav {
+  margin-top: 0.75rem;
+}
+
+.search {
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  input {
+    text-indent: 30px;
+    // background-color: $med-blue;
+    border: 0;
+
+    &::placeholder {
+      color: $light-gray;
+    }
+  }
+
+  .fa-search {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    font-size: 15px;
+    color: $light-gray;
   }
 }
 
@@ -50,8 +77,15 @@ body {
     background-color: #808080;
     margin: 1.5rem 0;
   }
-}
 
-// .main-nav-hide { transform: translateX(0); }
+  .box {
+    float: left;
+    overflow: hidden;
+  }
+
+  .box-inner {
+    padding: 10px;
+  }
+}
 
 // #main-content {}
